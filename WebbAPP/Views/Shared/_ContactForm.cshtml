@@ -1,0 +1,33 @@
+﻿@model ContactFormViewModel
+
+<form method="post" asp-action="Index" asp-controller="Contacts" novalidate>
+    <div class="mb-3">
+        <label asp-for="Name" class="form-label"> Name </label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" class="small text-danger"></span>
+    </div>
+
+
+    <div class="mb-3">
+        <label asp-for="Email" class="form-label"> Email </label>
+        <input asp-for="Email" class="form-control" />
+        <span asp-validation-for="Email" class="small text-danger"></span>
+    </div>
+
+
+
+    <div class="mb-3">
+        <label asp-for="Massage" class="form-label"> Massage </label>
+        <textarea asp-for="Massage" class="form-control" rows="5"></textarea>
+        <span asp-validation-for="Massage" class="small text-danger"></span>
+    </div>
+
+
+
+    <div class="mt-4">
+        <button class="btn btn-secondary">submit</button>
+    </div>
+
+
+
+</form>

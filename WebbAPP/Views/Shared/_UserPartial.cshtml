@@ -1,0 +1,10 @@
+﻿
+@model IList<IdentityUser>
+
+
+
+
+@foreach (var user in Model)
+{
+    <div>@user.Email</div>
+}
